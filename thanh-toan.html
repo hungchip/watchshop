@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>DEMO GIAO DIỆN WEB BÁN ĐỒNG HỒ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/plugin/owl-carousel/owl.carousel.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/plugin/flickity/flickity.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/responsive-home.css">
+
+</head>
+
+<body>
+    <div class="main-menu-overlay"></div>
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="popupLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Đăng nhập</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-login" style="display: block;">
+                        <p>
+                            <label for="">Tên tài khoản hoặc địa chỉ email*</label>
+                            <input type="text">
+                        </p>
+                        <p>
+                            <label for="">Mật khẩu</label>
+                            <input type="password">
+                        </p>
+                        <p class="btn-login" class="form-row">
+                            <button>Đăng nhập</button>
+                            <label for="remmenber">
+                                <input type="checkbox" style="width:unset;" id="remmenber">
+                                <span>Ghi nhớ mật khẩu</span>
+                            </label>
+                        </p>
+                        <span><a href="">Quên mật khẩu ?</a></span>
+                    </form>
+
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="mfp-wrap">
+        <div class="mfp-container">
+            <div class="mfp-content">
+                <div id="main-menu">
+                    <div class="sidebar-menu">
+                        <ul class="nav-sidebar">
+                            <li class="header-search-form">
+                                <div class="search-form-wrapper">
+                                    <form action="" class="relative">
+                                        <div class="flex-row">
+                                            <div class="flex-col flex-grow">
+                                                <input type="text" placeholder="Tìm kiếm...">
+                                                <input type="hidden">
+                                            </div>
+                                            <div class="flex-col ">
+                                                <button type="submit"><i class="fas fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="live-search-result">
+                                            <div class="autocomplete-suggestion">
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Giới thiệu</span></a></li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Đồng hồ nam</span></a></li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Đồng hồ nữ</span></a></li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Đồng hồ đôi</span></a></li>
+                            <li class="menu-item has-child"><a href=""><span class="menu-title">Phụ kiện</span></a>
+                                <button class="toggle"><i class="fas fa-angle-down"></i></button>
+                                <ul class="child">
+                                    <li class="menu-item"><a href=""><span class="menu-title">Dây Da Hirsch</span></a></li>
+                                    <li class="menu-item"><a href=""><span class="menu-title">Dây Da ZRC</span></a></li>
+                                    <li class="menu-item"><a href=""><span class="menu-title">Hộp đồng hồ</span></a></li>
+                                    <li class="menu-item"><a href=""><span class="menu-title">D.Vụ In Logo Lên Đồng Hồ</span></a></li>
+                                    <li class="menu-item"><a href=""><span class="menu-title">Khắc Laser Lên Đồng Hồ</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Tin tức</span></a></li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Liên hệ</span></a></li>
+                            <li class="menu-item account-item"><a href="#"><span class="menu-title">Đăng nhập</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="mfp-close" title="Close (Esc)" type="button">x</button>
+    </div>
+
+    <!--  menu web -->
+    <div id="wrapper">
+        <header class="nav-head " style="background: #000; position: relative;">
+            <nav class="navbar navbar-expand-lg navbar-light  menu-bar">
+                <div class="container">
+                    <a class="navbar-brand logo" href="#"><img src="assets/images/logo-mona-watches-white.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  
+                </button>
+                    <a href="" class="icon-cart-rps"><i class="fas fa-shopping-bag"></i></a>
+                    <div class="collapse navbar-collapse content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav wrap menu-left menu">
+                            <li class="nav-item active item">
+                                <a class="menu-link" href="#"><span class="">Giới thiệu</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="#"><span class="">Đồng hồ nam</span> </a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="#"><span class="">Đồng hồ nữ</span> </a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="#"><span class="">Đồng hồ đôi</span> </a>
+                            </li>
+                            <li class="nav-item  item has-sub">
+                                <a class="menu-link  " href="" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                        Phụ kiện
+                      </a>
+                                <div class="dropdown-menu sub" aria-labelledby="">
+                                    <a class="dropdown-item sub-item" href="#"><span class="">Dây da Hirsch</span></a>
+                                    <a class="dropdown-item sub-item" href="#"><span class="">Dây da ZRC</span></a>
+                                    <a class="dropdown-item sub-item" href="#"><span class="">Hộp đồng hồ</span></a>
+                                    <a class="dropdown-item sub-item" href="#"><span class="">D.Vụ In Logo Lên Đồng Hộ</span></a>
+                                    <a class="dropdown-item sub-item" href="#"><span class="">Khắc Lazer Lên Đồng Hộ</span></a>
+                                </div>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="#"><span class="">Tin tức</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="#"><span class="">Liên hệ</span></a>
+                            </li>
+                        </ul>
+                        <div class="right-menu ">
+                            <ul class="list-item menu">
+                                <li class="item has-sub"><a class="menu-link" href="#"><i class="fas fa-search"></i></a>
+                                    <div class="dropdown-menu sub sub-1" aria-labelledby="">
+                                        <form class="form-inline">
+                                            <input class="form-control " type="search" placeholder="" aria-label="Search">
+                                            <button class="btn  my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="item" data-toggle="modal" data-target="#popupLogin"><a class="menu-link" href="#"><i class="fas fa-user"></i></a></li>
+                                <li class="item has-sub"><a class="menu-link" href=""><i class="fas fa-shopping-bag" data-icon-label="99"></i></a>
+                                    <div class="dropdown-menu sub sub-2" aria-labelledby="">
+                                        <!-- <span>Chưa có sản phẩm nào trong giỏ hàng</span> -->
+                                        <div class="widget-shoping-cart-content">
+                                            <ul class="product-list-widget">
+                                                <li class="relative cart-item">
+                                                    <a href="" class="product-remove">x</a>
+                                                    <a class="product-image" href="">
+                                                        <img src="assets/images/dong-ho-casio-ga-100de-2adr-nu-pin-day-nhua-600x600-300x300.jpg" alt="">
+                                                        <span class="product-name">ĐỒNGaDR NGaDR NỮ PIN DÂY NNGaDR NỮ PIN DÂY NNGaDR NỮ PIN DÂY NNỮ PIN DÂY NHỰA</span>
+                                                    </a>
+                                                    <div class="pay">
+                                                        <span class="quantity">
+                                                            1
+                                                        </span>x
+                                                        <span class="price">1111111111</span>
+                                                        <span class="unit">đ</span>
+                                                    </div>
+                                                </li>
+
+                                                <li class="relative cart-item">
+                                                    <a href="" class="product-remove">x</a>
+                                                    <a class="product-image" href="">
+                                                        <img src="assets/images/dong-ho-casio-ga-100de-2adr-nu-pin-day-nhua-600x600-300x300.jpg" alt="">
+                                                        <span class="product-name">ĐỒNG HỒ CASIO GA-100DE-2ADR NỮ PIN DÂY NHỰA</span>
+                                                    </a>
+                                                    <div class="pay">
+                                                        <span class="quantity">
+                                                            1
+                                                        </span>x
+                                                        <span class="price">1111111111</span>
+                                                        <span class="unit">đ</span>
+                                                    </div>
+                                                </li>
+                                                <li class="relative cart-item">
+                                                    <a href="" class="product-remove">x</a>
+                                                    <a class="product-image" href="">
+                                                        <img src="assets/images/dong-ho-casio-ga-100de-2adr-nu-pin-day-nhua-600x600-300x300.jpg" alt="">
+                                                        <span class="product-name">ĐỒNG HỒ CASIO GA-100DE-2ADR NỮ PIN DÂY NHỰA</span>
+                                                    </a>
+                                                    <div class="pay">
+                                                        <span class="quantity">
+                                                            1
+                                                        </span>x
+                                                        <span class="price">1111111111</span>
+                                                        <span class="unit">đ</span>
+                                                    </div>
+                                                </li>
+                                                <li class="relative cart-item">
+                                                    <a href="" class="product-remove">x</a>
+                                                    <a class="product-image" href="">
+                                                        <img src="assets/images/dong-ho-casio-ga-100de-2adr-nu-pin-day-nhua-600x600-300x300.jpg" alt="">
+                                                        <span class="product-name">ĐỒNG HỒ CASIO GA-100DE-2ADR NỮ PIN DÂY NHỰA</span>
+                                                    </a>
+                                                    <div class="pay">
+                                                        <span class="quantity">
+                                                            1
+                                                        </span>x
+                                                        <span class="price">1111111111</span>
+                                                        <span class="unit">đ</span>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            <p class="total text-center">
+                                                <strong>Tổng cộng</strong>
+                                                <span class="total-price">64,000,000</span><span class="unit">đ</span>
+                                            </p>
+                                            <p style="display: grid;">
+                                                <a href="" class="text-center">Xem giỏ hàng</a>
+                                                <a href="" class="text-center">Thanh toán</a>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                            </form> -->
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="content" style="position: relative; padding-bottom: 80px;">
+
+            <div id="cart-wrapper">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-inner">
+
+                                <div class="row">
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="you-have">
+                                            <div class="have-account">
+                                                <p>Bạn đã có tài khoản ? <span><a href="">Ấn vào đây để đăng nhập</a></span></p>
+                                            </div>
+                                            <div class="have-discount">
+                                                <p><i class="fas fa-tag"></i> Có mã ưu đãi? <span><a href="">Nhấp vào đây để nhập mã của bạn</a></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <form action="" style="width:100%; padding: 0 30px;">
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                                                <div class="customer-detail" style="margin-bottom: 40px;">
+                                                    <div class="bill-field">
+                                                        <h3>Thông tin thanh toán</h3>
+                                                        <div class="field-wrapper">
+                                                            <p class=" form-row form-row-first">
+                                                                <label for="billing-first-name">Họ và tên *</label>
+                                                                <input type="text" id="billing-first-name">
+                                                            </p>
+                                                            <p class="form-row form-row-last">
+                                                                <label for="billing-address">Địa chỉ *</label>
+                                                                <input type="text" id="billing-address">
+                                                            </p>
+                                                            <p class="form-row form-row-first">
+                                                                <label for="billing-phone">Số điện thoại *</label>
+                                                                <input type="text" id="billing-phone">
+                                                            </p>
+                                                            <!-- <p class="form-row-wide">
+                                                                <label for="billing-country">Tên công ty</label>
+                                                                <select name="" id="billing-country">
+                                                                    <option value="">Việt Nam</option>
+                                                                    <option value="">Trung Quốc</option>
+                                                                    <option value="">Mỹ</option>
+                                                                    <option value="">Thái Lan</option>
+                                                                    <option value="">Ai Cập</option>
+                                                                </select>
+                                                            </p> -->
+                                                            <p class="form-row form-row-last">
+                                                                <label for="billing-mail">Email *</label>
+                                                                <input type="text" id="billing-mail">
+                                                            </p>
+                                                            <!-- <p class=" form-row form-row-wide">
+                                                                <label for="billing-postcode">Mã bưu điện</label>
+                                                                <input type="text" id="billing-postcode">
+                                                            </p>
+                                                            <p class="form-row form-row-wide">
+                                                                <label for="billing-city">Tỉnh thành phố</label>
+                                                                <input type="text" id="billing-city">
+                                                            </p>
+                                                            <p class="form-row form-row-wide">
+                                                                <label for="billing-phone">Số điện thoại</label>
+                                                                <input type="text" id="billing-phone">
+                                                            </p>
+                                                            <p class="form-row form-row-wide">
+                                                                <label for="billing-email">Địa chỉ email</label>
+                                                                <input type="text" id="billing-email">
+                                                            </p> -->
+                                                            <p class="form-row form-row-wide">
+                                                                <label for="billing-note">Ghi chú đơn hàng</label>
+                                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-field"></div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="cart-pay col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                                                <div class="cart-pay-inner1" style="padding: 30px 20px; border: solid;">
+                                                    <div class="cart-pay-content">
+                                                        <div class="cart-total">
+                                                            <table cellspacing="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="product-name" colspan="2"><strong>Đơn hàng của bạn</strong></th>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                            <h2></h2>
+                                                            <table class="shop-table">
+                                                                <thead>
+                                                                    <tr class="cart-subtotal">
+                                                                        <th class="product-name">Sản phẩm</th>
+                                                                        <th class="product-total" style="text-align: right;">Tổng cộng</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="cart-item">
+                                                                        <td class="product-name">
+                                                                            ĐỒNG HỒ CASIO MTP-1374L-1AVDF NAM PIN DÂY DA <strong class="quantity">x1</strong></td>
+                                                                        <td class="product-total">
+                                                                            <strong>
+                                                                                <span class="price">1,667,000</span> &nbsp; <span class="unit">đ</span>
+
+                                                                            </strong>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="cart-item">
+                                                                        <td class="product-name">
+                                                                            ĐỒNG HỒ CASIO MTP-1374L-1AVDF NAM PIN DÂY DA <strong class="quantity">x1</strong></td>
+                                                                        <td class="product-total">
+                                                                            <span class="price">1,667,000</span> &nbsp; <span class="unit">đ</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="cart-item">
+                                                                        <th>Tổng cộng</th>
+                                                                        <td>
+                                                                            <strong>
+                                                                                <span class="price">64,411,300 <span class="unit">đ</span></span>
+                                                                            </strong>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="shipping">
+                                                                        <th>Giao hàng 1</th>
+                                                                        <td>Giao hàng miẽn phí
+                                                                            <form action="">
+                                                                                <p><a href="#" class="shipping-fee">Tính phí giao hàng</a></p>
+                                                                                <section class="form-shipping">
+                                                                                    <p>
+                                                                                        <select name="" id="">
+                                                                                            <div class="select-wrapper">
+                                                                                                <option value="">Chọn quốc gia</option>
+                                                                                                <option value="">Việt Nam</option>
+                                                                                                <option value="">Trung Quốc</option>
+                                                                                                <option value="">Thái Lan</option>
+                                                                                                <option value="">Ấn Độ</option>
+                                                                                                <option value="">Singapo</option>
+                                                                                                <option value="">Mỹ</option>
+                                                                                            </div>
+                                                                                        </select>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <input type="text" placeholder="Quận/Huyện">
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <input type="text" placeholder="Mã bưu điện">
+                                                                                    </p>
+                                                                                    <p><button class="btn-update">Cập nhật tổng</button></p>
+                                                                                </section>
+                                                                            </form>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="order-total">
+                                                                        <th>Tổng cộng</th>
+                                                                        <td>
+                                                                            <strong>
+                                                                                <span class="price">64,411,300 <span class="unit">đ</span></span>
+                                                                            </strong>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="notify">
+                                                                <p>
+                                                                    Rất tiếc, có vẻ như không có phương thức thanh toán nào phù hợp với khu vực bang hiện tại của bạn. Vui lòng liên hệ với chúng tôi nếu bạn cần hỗ trợ hoặc muốn sắp xếp phương án thay thế.
+                                                                </p>
+                                                            </div>
+                                                            <div class="checkout">
+                                                                <a type="submit">Đặt hàng</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </main>
+        <footer id="footer">
+            <section class="sec-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="direct">
+                                <h3>Điều hướng</h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="box-mail text-center">
+                                <div class="img-logo">
+                                    <img src="assets/images/logo-mona-watches-white.png" alt="">
+                                </div>
+                                <div class="input-mail">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
+                                    <form action="">
+                                        <p>
+                                            <span class="email-dang-ki">
+                                                <input type="email" placeholder="Email">
+                                            </span> <br>
+                                            <input class="send" type="submit" value="Gửi">
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="contact">
+                                <h3>Thông tin liên hệ</h3>
+                                <p>319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                                <p><a href="tel:0126 922 0162">0126 922 0162</a></p>
+                                <p><a href="mailto:demonhunter@gmail.com">demonhunter@gmail.com</a><br><a href="mailto:mon@mona.media">mon@mona.media</a></p>
+                                <p><a href="skype:demonhunterp?chat">demonhunterp</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <div class="box-copy-right text-center">
+                <div class=" copy-right ">
+
+                    © All rights reserved. Thiết kế website
+                    <img src="assets/images/logo.png " alt=" ">
+                    <a href=" ">Mona Media</a>
+                </div>
+            </div>
+            <div class="back-top "><i class="fas fa-angle-up"></i></div>
+        </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.5.1.min.js "></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <!-- <script src="assets/plugin/owl-carousel/owl.carousel.min.js "></script> -->
+    <script src="assets/plugin/flickity/flickity.pkgd.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>

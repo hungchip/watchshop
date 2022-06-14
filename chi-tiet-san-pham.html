@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>DEMO GIAO DIỆN WEB BÁN ĐỒNG HỒ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/plugin/owl-carousel/owl.carousel.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/plugin/flickity/flickity.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/responsive-home.css">
+
+</head>
+
+<body>
+    <div class="main-menu-overlay"></div>
+    <div class="mfp-wrap">
+        <div class="mfp-container">
+            <div class="mfp-content">
+                <div id="main-menu">
+                    <div class="sidebar-menu">
+                        <ul class="nav-sidebar">
+                            <li class="header-search-form">
+                                <div class="search-form-wrapper">
+                                    <form action="" class="relative">
+                                        <div class="flex-row">
+                                            <div class="flex-col flex-grow">
+                                                <input type="text" placeholder="Tìm kiếm...">
+                                                <input type="hidden">
+                                            </div>
+                                            <div class="flex-col ">
+                                                <button type="submit"><i class="fas fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="live-search-result">
+                                            <div class="autocomplete-suggestion">
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Giới thiệu</span></a></li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Đồng hồ nam</span></a></li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Đồng hồ nữ</span></a></li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Đồng hồ đôi</span></a></li>
+                            <li class="menu-item has-child"><a href=""><span class="menu-title">Phụ kiện</span></a>
+                                <button class="toggle"><i class="fas fa-angle-down"></i></button>
+                                <ul class="child">
+                                    <li class="menu-item"><a href=""><span class="menu-title">Dây Da Hirsch</span></a></li>
+                                    <li class="menu-item"><a href=""><span class="menu-title">Dây Da ZRC</span></a></li>
+                                    <li class="menu-item"><a href=""><span class="menu-title">Hộp đồng hồ</span></a></li>
+                                    <li class="menu-item"><a href=""><span class="menu-title">D.Vụ In Logo Lên Đồng Hồ</span></a></li>
+                                    <li class="menu-item"><a href=""><span class="menu-title">Khắc Laser Lên Đồng Hồ</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Tin tức</span></a></li>
+                            <li class="menu-item"><a href=""><span class="menu-title">Liên hệ</span></a></li>
+                            <li class="menu-item account-item"><a href=""><span class="menu-title">Đăng nhập</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="mfp-close" title="Close (Esc)" type="button">x</button>
+    </div>
+    <div id="wrapper">
+        <header class="nav-head " style="background: #000; position: relative;">
+            <nav class="navbar navbar-expand-lg navbar-light  menu-bar">
+                <div class="container">
+                    <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo-mona-watches-white.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                    <div class="collapse navbar-collapse content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav wrap menu-left menu">
+                            <li class="nav-item active item">
+                                <a class="menu-link" href="gioi-thieu.html"><span class="">Giới thiệu</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="dong-ho-nam.html"><span class="">Đồng hồ nam</span> </a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="dong-ho-nu.html"><span class="">Đồng hồ nữ</span> </a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="dong-ho-doi.html"><span class="">Đồng hồ đôi</span> </a>
+                            </li>
+                            <li class="nav-item  item has-sub">
+                                <a class="menu-link  " href="" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                        Phụ kiện
+                      </a>
+                                <div class="dropdown-menu sub" aria-labelledby="">
+                                    <a class="dropdown-item sub-item" href="#"><span class="">Dây da Hirsch</span></a>
+                                    <a class="dropdown-item sub-item" href="#"><span class="">Dây da ZRC</span></a>
+                                    <a class="dropdown-item sub-item" href="#"><span class="">Hộp đồng hồ</span></a>
+                                    <a class="dropdown-item sub-item" href="#"><span class="">D.Vụ In Logo Lên Đồng Hộ</span></a>
+                                    <a class="dropdown-item sub-item" href="#"><span class="">Khắc Lazer Lên Đồng Hộ</span></a>
+                                </div>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="tin-tuc.html"><span class="">Tin tức</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="menu-link" href="lien-he.html"><span class="">Liên hệ</span></a>
+                            </li>
+                        </ul>
+                        <div class="right-menu ">
+                            <ul class="list-item menu">
+                                <li class="item has-sub"><a class="menu-link" href="#"><i class="fas fa-search"></i></a>
+                                    <div class="dropdown-menu sub sub-1" aria-labelledby="">
+                                        <form class="form-inline">
+                                            <input class="form-control " type="search" placeholder="" aria-label="Search">
+                                            <button class="btn  my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="item"><a class="menu-link" href=""><i class="fas fa-user"></i></a></li>
+                                <li class="item has-sub"><a class="menu-link" href=""><i class="fas fa-shopping-bag"></i></a>
+                                    <div class="dropdown-menu sub sub-2" aria-labelledby="">
+                                        <!-- <span>Chưa có sản phẩm nào trong giỏ hàng</span> -->
+                                        <ul>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                            </form> -->
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="content" style="padding-top: 30px; padding-bottom: 30px;">
+
+            <div class="shop-container container">
+                <div class="product-main">
+
+                    <div class="row">
+
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+                            <aside id="product-relate">
+                                <span class="title">Sản phẩm</span>
+                                <div class="is-divider"></div>
+                                <ul class="box-sidebar">
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/dich-vu-khac-laser-len-dong-ho-deo-tay-theo-yeu-cau-600x600-300x300.jpg" alt="">
+                                            <span>Dịch Vụ Khắc Laser Logo Công Ty Lên Đồng Hồ</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/Demo-In-Logo-Nestle-600x600-300x300.jpg" alt="">
+                                            <span>Dịch Vụ In Logo Màu Lên Mặt Số Đồng Hồ</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/ZRC-DOUBLE-WATCH-WINDER-EM03201-600x600-300x300.jpg" alt="">
+                                            <span>HỘP LÊN DÂY CÓT TỰ ĐỘNG ZRC DOUBLE-WATCH WINDER EM03201</span>
+                                        </a>
+
+                                        <!-- <del>
+                                            <span>710,000&nbsp;</span><span class="unit">đ</span>
+                                        </del>&nbsp; -->
+                                        <ins class="bold">
+                                            <span class="under-none">639,000&nbsp;</span>
+                                            <span class="unit">đ<span></ins>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/day-da-zrc-654-tasman-600x600-300x300.jpg" alt="">
+                                            <span>DÂY DA ZRC 654 TASMAN</span>
+                                        </a>
+
+                                        <del>
+                                            <span>710,000&nbsp;</span><span class="unit">đ</span>
+                                        </del>&nbsp;
+                                        <ins class="bold">
+                                            <span class="under-none">639,000&nbsp;</span>
+                                            <span class="unit">đ<span></ins>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/18_Hirsh-Mariner-Black-600x600-300x300.jpg" alt="">
+                                            <span>HIRSCH MARINER</span>
+                                        </a>
+
+                                        <!-- <del>
+                                            <span>710,000&nbsp;</span><span class="unit">đ</span>
+                                        </del>&nbsp; -->
+                                        <ins class="bold">
+                                            <span class="under-none">950,000&nbsp;</span>
+                                            <span class="unit">đ<span></ins>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside id="new-post">
+                                <span class="title">Bài viết mới</span>
+                                <div class="is-divider"></div>
+                                <ul>
+                                    <li class="recent-post">
+                                        <div class="flex-row">
+                                            <div class="date">
+                                                <span class="post-day">08</span><br>
+                                                <span class="post-month">Th3</span>
+                                            </div>
+
+                                            <a href="">
+                                                    Duis luctus elit nisi, et cursus magna pellentesque non.
+                                                </a>
+                                        </div>
+                                    </li>
+                                    <li class="recent-post">
+                                        <div class="flex-row">
+                                            <div class="date">
+                                                <span class="post-day">08</span><br>
+                                                <span class="post-month">Th3</span>
+                                            </div>
+
+                                            <a href="">
+                                                    Mauris tristique pretium tempus. Vestibulum et accumsan magna.
+                                                </a>
+                                        </div>
+                                    </li>
+                                    <li class="recent-post">
+                                        <div class="flex-row">
+                                            <div class="date">
+                                                <span class="post-day">08</span><br>
+                                                <span class="post-month">Th3</span>
+                                            </div>
+
+                                            <a href="">
+                                                    Aliquam placerat nisl nec imperdiet vehicula. Phasellus tempus ligula id orci finibus feugiat.
+                                                </a>
+                                        </div>
+                                    </li>
+                                    <li class="recent-post">
+                                        <div class="flex-row">
+                                            <div class="date">
+                                                <span class="post-day">08</span><br>
+                                                <span class="post-month">Th3</span>
+                                            </div>
+
+                                            <a href="">
+                                                    In rutrum tempus purus, ut euismod dui facilisis ac. Fusce semper dignissim diam a egestas.
+                                                </a>
+                                        </div>
+                                    </li>
+                                    <li class="recent-post">
+                                        <div class="flex-row">
+                                            <div class="date">
+                                                <span class="post-day">08</span><br>
+                                                <span class="post-month">Th3</span>
+                                            </div>
+
+                                            <a href="">
+                                                    Donec tempus eu ligula sed blandit. Vivamus vel enim ac quam iaculis rutrum.
+                                                </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+
+                        <div id="product-sidebar" class=" col col-xs-12 col-sm-12 col-md-12 col-lg-9">
+
+                            <div class="row" style="width:100%;">
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="product-image relative">
+                                        <div class="absolute discount-container">
+                                            <div class="table-discount">
+                                                <div class="discount">
+                                                    <span>-99%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/dong-ho-casio-ga-110gb-1adr-nam-pin-day-nhua-600x600-300x300.jpg" alt="">
+                                        <div class="zoom absolute">
+                                            <a href=""><i class="fas fa-expand-alt"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="main-category">
+                                        <a href="">Trang chủ</a>
+                                        <div class="divider">/</div>
+                                        <span>Đồng hồ nam</span>
+                                    </div>
+                                    <h1 class="product-name">
+                                        ĐỒNG HỒ CASIO GA-110GB-1ADR NAM PIN DÂY NHỰA</h1>
+                                    <div class="is-divider"></div>
+                                    <div class="price-wrapper">
+                                        <del>
+                                            <span>710,000&nbsp;</span><span class="unit">đ</span>
+                                        </del>&nbsp;
+                                        <ins class="bold">
+                                            <span class="under-none">639,000&nbsp;</span>
+                                            <span class="unit">đ<span></ins>
+                                    </div>
+                                    <div class="product-description">
+                                        <p>Đồng hồ nam CASIO GA-110GB-1AVDF có thiết kế mới sử dụng kim loại màu vàng làm vạch số và kim nổi bật, sang trọng hơn so với thiết kế cũ nên mẫu GA-110GB-1AVDF rất được lòng giới trẻ hiện nay.</p>
+                                    </div>
+                                    <form action="">
+                                        <div class="quantity">
+                                            <input type="button" value="-" class="sub-quantity">
+                                            <input class="input-number text-center" type="number" value="1" min="1" max="999">
+                                            <input type="button" value="+" class="add-quantity">
+                                        </div>
+                                        <button class="btn-add-cart">Thêm vào giỏ</button>
+                                    </form>
+                                    <div class="product-meta">
+                                        <div class="sku-wrapper">Mã: <span class="sku"> GA-110GB-1ADR</span></div>
+                                        <div class="posted-in">Danh mục: <a href="">Đồng hồ nam</a></div>
+                                        <div class="tagged-as">Tag: <a href="">Đồng hồ Casio hot bán chạy nhất</a>,<a href="">Đồng hồ kim điện tử</a>,<a href="">G-SHOCK</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="product-footer">
+                                    <div class="tab-content">
+                                        <ul class="product-tabs">
+                                            <li class="tab-link add-infor-tab ">
+                                                <a onclick="">Thông tin bổ sung</a>
+                                            </li>
+                                            <li class="tab-link review-tab">
+                                                <a onclick=""> Đánh giá &nbsp; <span>(0)</span></a>
+                                            </li>
+                                            <li class="tab-link warranty-tab">
+                                                <a onclick="">Chính sách bảo hành</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-panels">
+                                            <div class="panel active" id="tab-add-infor">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th> Bộ máy & năng lượng</th>
+                                                            <td>
+                                                                <p><a href="">Pin (Quartz)</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Chất liệu dây</th>
+                                                            <td>
+                                                                <p><a href="">Dây Nhựa / Cao Su</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Chất liệu mặt kính</th>
+                                                            <td>
+                                                                <p><a href="">Kính Cứng</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Giới tính</th>
+                                                            <td>
+                                                                <p><a href="">Nam</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Hình dạng mặt số</th>
+                                                            <td>
+                                                                <p><a href="">30 - 34 mm</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Màu mặt số</th>
+                                                            <td>
+                                                                <p><a href="">Đen , Vàng</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Mức chống nước</th>
+                                                            <td>
+                                                                <p><a href="">Đi Tắm (5 ATM)</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Thương hiệu</th>
+                                                            <td>
+                                                                <p><a href="">Casio, G-Shock & Baby-G</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Xuất xứ</th>
+                                                            <td>
+                                                                <p><a href="">Nhật Bản</a></p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="panel " id="tab-reviews">
+
+                                                <div class="row">
+
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <h3>Đánh giá</h3>
+                                                        <p>Chưa có đánh giá nào</p>
+                                                    </div>
+                                                    <div class="review-form-wrapper col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <div class="review-form">
+                                                            <div class="review-form-inner">
+                                                                <div class="respond">
+                                                                    <h3 class="rep-title">Hãy là người đầu tiên nhận xét “ĐỒNG HỒ CASIO GA-110GB-1ADR NAM PIN DÂY NHỰA” </h3>
+                                                                    <form action="">
+                                                                        <div class="form-rate">
+                                                                            <label for="rating">Đánh giá của bạn</label>
+                                                                            <p class="star">
+                                                                                <span>
+                                                                                    <a class="star-1" href="">1</a>
+                                                                                    <a class="star-2" href="">2</a>
+                                                                                    <a class="star-3" href="">3</a>
+                                                                                    <a class="star-4" href="">4</a>
+                                                                                    <a class="star-5" href="">5</a>
+                                                                                </span>
+                                                                            </p>
+                                                                            <select name="" id="rating">
+                                                                                <option value="">Xếp hạng</option>
+                                                                                <option value="5">Rất tốt</option>
+                                                                                <option value="4">Tốt</option>
+                                                                                <option value="3">Trung bình</option>
+                                                                                <option value="2">Không tệ</option>
+                                                                                <option value="1">Rất tệ</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <p class="form-comment">
+                                                                            <label for="comment">
+                                                                                Nhận xét của bạn <span>*</span>
+                                                                            </label>
+                                                                            <textarea name="" id="" cols="30" rows="4"></textarea>
+                                                                        </p>
+                                                                        <p class="form-author">
+                                                                            <label for="author">Tên <span>*</span></label>
+                                                                            <input type="text" id="author">
+                                                                        </p>
+                                                                        <p class="form-email">
+                                                                            <label for="email">Email <span>*</span></label>
+                                                                            <input type="text" id="email">
+                                                                        </p>
+                                                                        <p class="form-submit">
+                                                                            <input type="submit" value="Gửi đi">
+                                                                        </p>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="panel " id="tab-warranty">
+                                                <p>Chính sách bảo hành của riêng mỗi hãng:</p>
+                                                <p>CASIO: Bảo hành chính hãng máy 1 năm, pin 1,5 năm</p>
+                                                <p>CITIZEN: Bảo hành chính hãng toàn cầu máy 1 năm, pin 1 năm</p>
+                                                <p>SEIKO: Bảo hành chính hãng toàn cầu máy 1 năm, pin 1 năm</p>
+                                                <p>ORIENT: Bảo hành chính hãng toàn cầu máy 1 năm, pin 1 năm</p>
+                                                <p>OP: Bảo hành chính hãng máy 2 năm, pin 1 năm</p>
+                                                <p>RHYTHM:&nbsp;Bảo hành chính hãng máy 1 năm, pin 1 năm</p>
+                                                <p>OGIVAL:&nbsp;Bảo hành chính hãng máy 2 năm, pin 1 năm</p>
+                                                <p>ELLE:&nbsp;Bảo hành chính hãng máy 2 năm, pin 2 năm</p>
+                                                <p>TISSOT:&nbsp;Bảo hành chính hãng máy 2 năm, pin 1 năm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-related">
+                                        <h3>Sản phẩm tương tự</h3>
+                                        <div class="carousel" data-flickity='{ "groupCells":4,"wrapAround":true, "pageDots": false ,"cellAlign": "left"}'>
+
+                                            <div class="product-container col-animated col-6 col-sm-6 col-md-6 col-lg-3 " data-animate="bounceRight" data-animated="true">
+                                                <div class="box-item">
+                                                    <!-- <div class="absolute discount-container">
+                                                        <div class="table-discount">
+                                                            <div class="discount">
+                                                                <span>-99%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="product">
+                                                        <div class="box-image">
+                                                            <a href="">
+                                                                <img class="image-product" src="assets/images/dong-ho-doi-alexandre-christie-ac8c26-1lk-trang-ac8c26-1mk-trang-pin-day-inox-600x600-300x300.jpg" alt="">
+                                                            </a>
+                                                            <div class="add-cart">
+                                                                <a href=""><strong class="add-cart-icon" >+</strong></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="box-text text-center">
+                                                            <div class="title-wrapper">
+                                                                <p class="product-cate">Đồng hồ đôi</p>
+                                                                <p class="product-name"><a href="">
+                                                                    ĐỒNG HỒ ĐÔI ALEXANDRE CHRISTIE AC8C26-1LK TRẮNG – AC8C26-1MK TRẮNG PIN DÂY INOX
+                                                                    </a></p>
+                                                            </div>
+                                                            <div class="price-wrapper ">
+                                                                <del>
+                                                                        <!-- <span>851,000&nbsp;</span> <span class="unit">đ</span> -->
+                                                                    </del>&nbsp;
+                                                                <ins>
+                                                                        <span class="under-none">6,080,000&nbsp;</span>
+                                                                        <span class="unit">đ<span></ins>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-container col-animated col-6 col-sm-6 col-md-6 col-lg-3 " data-animate="bounceRight" data-animated="true">
+                                                <div class="box-item">
+                                                    <div class="absolute discount-container">
+                                                        <div class="table-discount">
+                                                            <div class="discount">
+                                                                <span>-99%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="box-image">
+                                                            <a href="">
+                                                                <img class="image-product" src="assets/images/dong-ho-doi-sunrise-sg-sl1085.1601-pin-day-inox-600x600-300x300.jpg" alt="">
+                                                            </a>
+                                                            <div class="add-cart">
+                                                                <a href=""><strong class="add-cart-icon" >+</strong></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="box-text text-center">
+                                                            <div class="title-wrapper">
+                                                                <p class="product-cate">Đồng hồ đôi</p>
+                                                                <p class="product-name"><a href="">
+                                                                    ĐỒNG HỒ ĐÔI SUNRISE SG – SL1085.1601 PIN DÂY INOX
+                                                                    </a></p>
+                                                            </div>
+                                                            <div class="price-wrapper">
+                                                                <del>
+                                                                        <span>4,700,000&nbsp;</span> <span class="unit">đ</span>
+                                                                    </del>&nbsp;
+                                                                <ins>
+                                                                        <span class="under-none">4,230,000&nbsp;</span>
+                                                                        <span class="unit">đ<span></ins>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-container col-animated col-6 col-sm-6 col-md-6 col-lg-3 " data-animate="bounceRight" data-animated="true">
+                                                <div class="box-item">
+                                                    <div class="absolute discount-container">
+                                                        <div class="table-discount">
+                                                            <div class="discount">
+                                                                <span>-99%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="box-image">
+                                                            <a href="">
+                                                                <img class="image-product" src="assets/images/dong-ho-doi-olympia-star-opa58012-07msk-trang-opa58012-07lsk-trang-pin-day-inox-600x600-300x300.jpg" alt="">
+                                                            </a>
+                                                            <div class="add-cart">
+                                                                <a href=""><strong class="add-cart-icon" >+</strong></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="box-text text-center">
+                                                            <div class="title-wrapper">
+                                                                <p class="product-cate">Đồng hồ đôi</p>
+                                                                <p class="product-name"><a href="">
+                                                                    ĐỒNG HỒ ĐÔI OLYMPIA STAR OPA58012-07MSK TRẮNG – OPA58012-07LSK TRẮNG PIN DÂY INOX
+                                                                    </a></p>
+                                                            </div>
+                                                            <div class="price-wrapper">
+                                                                <del>
+                                                                        <span>7,728,000&nbsp;</span> <span class="unit">đ</span>
+                                                                    </del>&nbsp;
+                                                                <ins>
+                                                                        <span class="under-none">6,955,000&nbsp;</span>
+                                                                        <span class="unit">đ<span></ins>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-container col-animated col-6 col-sm-6 col-md-6 col-lg-3 " data-animate="bounceRight" data-animated="true">
+                                                <div class="box-item">
+                                                    <!-- <div class="absolute discount-container">
+                                                        <div class="table-discount">
+                                                            <div class="discount">
+                                                                <span>-99%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="product">
+                                                        <div class="box-image">
+                                                            <a href="">
+                                                                <img class="image-product" src="assets/images/dong-ho-citizen-bd0030-00a-er0190-00a-doi-pin-day-da-a-600x600-300x300.jpg" alt="">
+                                                            </a>
+                                                            <div class="add-cart">
+                                                                <a href=""><strong class="add-cart-icon" >+</strong></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="box-text text-center">
+                                                            <div class="title-wrapper">
+                                                                <p class="product-cate">Đồng hồ nam</p>
+                                                                <p class="product-name"><a href="">
+                                                                    ĐỒNG HỒ ĐÔI CITIZEN BD0030-00A – ER0190-00A PIN DÂY DA
+                                                                    </a></p>
+                                                            </div>
+                                                            <div class="price-wrapper">
+                                                                <del>
+                                                                        <!-- <span>851,000&nbsp;</span> <span class="unit">đ</span> -->
+                                                                    </del>&nbsp;
+                                                                <ins>
+                                                                        <span class="under-none">5,140,000&nbsp;</span>
+                                                                        <span class="unit">đ<span></ins>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-container col-animated col-6 col-sm-6 col-md-6 col-lg-3 " data-animate="bounceRight" data-animated="true">
+                                                <div class="box-item">
+                                                    <!-- <div class="absolute discount-container">
+                                                        <div class="table-discount">
+                                                            <div class="discount">
+                                                                <span>-99%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="product">
+                                                        <div class="box-image">
+                                                            <a href="">
+                                                                <img class="image-product" src="assets/images/dong-ho-casio-mtp-e312d-7bvdf-ltp-e312d-4bvdf-doi-pin-day-inox-a-600x600-300x300.jpg" alt="">
+                                                            </a>
+                                                            <div class="add-cart">
+                                                                <a href=""><strong class="add-cart-icon" >+</strong></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="box-text text-center">
+                                                            <div class="title-wrapper">
+                                                                <p class="product-cate">Đồng hồ đôi</p>
+                                                                <p class="product-name"><a href="">
+                                                                    ĐỒNG HỒ ĐÔI CASIO MTP-E312D-7BVDF – LTP-E312D-4BVDF PIN DÂY INOX
+                                                                    </a></p>
+                                                            </div>
+                                                            <div class="price-wrapper">
+                                                                <del>
+                                                                        <!-- <span>851,000&nbsp;</span> <span class="unit">đ</span> -->
+                                                                    </del>&nbsp;
+                                                                <ins>
+                                                                        <span class="under-none">4,324,000&nbsp;</span>
+                                                                        <span class="unit">đ<span></ins>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+        <footer id="footer">
+            <section class="sec-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="direct">
+                                <h3>Điều hướng</h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="box-mail text-center">
+                                <div class="img-logo">
+                                    <img src="assets/images/logo-mona-watches-white.png" alt="">
+                                </div>
+                                <div class="input-mail">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
+                                    <form action="">
+                                        <p>
+                                            <span class="email-dang-ki">
+                                                <input type="email" placeholder="Email">
+                                            </span> <br>
+                                            <input class="send" type="submit" value="Gửi">
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="contact">
+                                <h3>Thông tin liên hệ</h3>
+                                <p>319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                                <p><a href="tel:0126 922 0162">0126 922 0162</a></p>
+                                <p><a href="mailto:demonhunter@gmail.com">demonhunter@gmail.com</a><br><a href="mailto:mon@mona.media">mon@mona.media</a></p>
+                                <p><a href="skype:demonhunterp?chat">demonhunterp</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <div class="box-copy-right text-center">
+                <div class=" copy-right ">
+
+                    © All rights reserved. Thiết kế website
+                    <img src="assets/images/logo.png " alt=" ">
+                    <a href=" ">Mona Media</a>
+                </div>
+            </div>
+            <div class="back-top "><i class="fas fa-angle-up"></i></div>
+        </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.5.1.min.js "></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <!-- <script src="assets/plugin/owl-carousel/owl.carousel.min.js "></script> -->
+    <script src="assets/plugin/flickity/flickity.pkgd.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>
